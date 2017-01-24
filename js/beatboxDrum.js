@@ -1,29 +1,70 @@
 
 $(document).ready(function(){
 	console.log("Poehali!");
-	var audio1 = $('.audio1')[0];
-	var audio2 = $('.audio2')[0];
-	var audio3 = $('.audio3')[0];
-	var audio4 = $('.audio4')[0];
-	var audio5 = $('.audio5')[0];
-	var audio6 = $('.audio6')[0];
-	var audio7 = $('.audio7')[0];
-	var audio8 = $('.audio8')[0];
-	var butt = $(".button")
-	function aud(i){
-		return $(".audio"+i)[0];
-	}
-
+	var butt = $(".button");
 	butt.mousedown(function(){
-				var s = aud($(this).index());
+				 s = $(this).find('audio')[0]
 				s.pause();
 				s.currentTime = 0;
-				// aud($(this).index()).stop();
 				s.play();
 			});
 
-	
-	// audio4.play();
+
+$(document).keyup(function(eventObject){
+	var k = eventObject.which;
+
+  // console.log('Клавиша клавиатуры приведена в нажатое состояние. Код вводимого символа - ' + eventObject.which);
+  if(k === 81){
+	var s = $(".audio1")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 87){
+	var s = $(".audio2")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 85){
+	var s = $(".audio3")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 73){
+	var s = $(".audio4")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 65){
+	var s = $(".audio5")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 83){
+	var s = $(".audio6")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 74){
+	var s = $(".audio7")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+    if(k === 75){
+	var s = $(".audio8")[0];
+	s.pause();
+	s.currentTime = 0;
+	s.play();
+  }
+
+});
+
 	
 	
 });
