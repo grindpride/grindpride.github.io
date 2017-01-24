@@ -1,0 +1,159 @@
+.block-container{
+	position: absolute;
+	overflow: hidden;
+	top:50%;
+	left:50%;
+	display:flex;
+	width: 1300px;
+	height: 600px;
+	margin:-300px 0 0 -650px;
+
+
+}
+.name {
+	position: absolute;
+    font-family: 'Comfortaa', sans-serif;
+    display: block;
+    color: black;
+    font-size: 100px;
+    letter-spacing: 20px;
+	width: 1300px;
+	height: 300px;
+	text-align: center;
+	top:50%;
+	left:50%;
+	margin:-300px 0 0 -650px;
+	transform: translateY(-120px);
+}
+.copy {
+    position: absolute;
+    font-family: 'Russo One', sans-serif;
+    display: block;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    align-self: center;
+
+    font-size: 20px;
+    margin: -200px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    color: black;
+    transform: translateY(520px);
+}
+
+.info{
+	transition: top 1s ease,left 1s ease, width 1s ease, height 1s ease,opacity 1s ease;
+	border-radius: 5%;
+	position: absolute;
+
+	
+}
+
+.block0{
+	opacity: 1;
+	left:0;
+	top:0;
+	width: 61.8%;
+	height: 100%;
+	/*background: red;*/
+	
+}
+.block1{
+	opacity: .8;
+	left:61.8%;
+	top:0;
+	height: 61.8%;
+	width: 38.2%;
+	background: blue;
+}
+.block2{
+	opacity: .6;
+	top:61.8%;
+	left:76.4%;
+	height: 38.3%;
+	width: 23.6%;
+	background: gold;
+}
+.block3{
+	opacity: .4;
+	background: green;
+	left:61.8%;
+	top:76.3%;
+	height: 23.67%;
+	width: 14.6%;
+}
+.block4{
+	opacity: .2;
+	background: gray;
+	top:61.8%;
+	left:61.8%;
+	height: 14.5%;
+	width: 9%;
+}
+.block5{
+	opacity: .1;
+    background: crimson;
+    top: 61.8%;
+    left: 70.8%;
+    height: 9.6%;
+    width: 5.6%;
+	}
+.block6{
+	opacity: 0.8;
+	left:0;
+	top:100%;
+	width: 100%;
+	height: auto;
+	/*background: red;*/
+	
+}
+.block7{
+	opacity: 0.8;
+	left:0;
+	top:100%;
+	width: 100%;
+	height: auto;
+	/*background: red;*/
+	
+}
+.img0{
+	background: url("../images/ugar/1.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img1{
+	background: url("../images/ugar/2.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img2{
+	background: url("../images/ugar/3.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img3{
+	background: url("../images/ugar/4.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img4{
+	background: url("../images/ugar/5.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img5{
+	background: url("../images/ugar/6.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img6{
+	background: url("../images/ugar/7.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.img7{
+	background: url("../images/ugar/8.jpg") 100%  no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
