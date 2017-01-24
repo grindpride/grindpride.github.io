@@ -48,7 +48,7 @@ $(document).ready(function(){
 			batya.addClass("visible").css("background",randomColor());
 			step+=4;
 			
-			console.log("Скукожено шаров: "+step);
+			console.log("Раскукожено шаров: "+step);
 			}}
 			kookozh();
 	if(step===dif){
