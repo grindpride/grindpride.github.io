@@ -1,0 +1,63 @@
+
+.drumMachine{
+	 justify-content: space-around;
+	position:absolute;
+	display:flex;
+	flex-wrap: wrap;
+	top:50%;
+	left:50%;
+	width: 800px;
+	height: 600px;
+	background:black;
+	margin: -300px 0 0 -400px;
+	align-content:center;
+
+	
+}
+.info {
+    font-family: 'Russo One', sans-serif;
+    position: absolute;
+    color: white;
+    top: 15px;
+    left: 195px;
+    font-size: 30px;
+}
+.button {
+    text-transform: uppercase;
+    padding: 10px;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+    margin: 20px 10px;
+	border-radius: 10px;
+    box-shadow: 0px 10px 0px 0px rgba(115,115,115,1);
+    font: 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+	transition: transform .1s ease, box-shadow .1s ease;
+}
+.button:active{
+    box-shadow: inset 0px 11px 20px 0px rgba(115,115,115,1);
+
+	transform:translateY(11px);
+}
+.button::selection {
+   background: transparent;
+}
+.copy {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    align-self: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    margin: 0 -200px;
+    top: 563px;
+    left: 50%;
+    color: white;
+}
