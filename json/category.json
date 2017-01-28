@@ -1,0 +1,661 @@
+[{
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Авиакомпании",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 5,
+    "ID": 1,
+    "Modified": "2015-07-13T14:22:36.000Z",
+    "Created": "2013-10-16T11:55:04.000Z",
+    "Author": {
+        "$1E_1": 1073741823,
+        "$2e_1": "System Account"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 5,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 100,
+    "GUID": {
+        "_m_guidString$p$0": "3b899731-8691-483d-a681-3b11e4a36882"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/1_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2013-10-16T11:55:04Z",
+    "Created_x0020_Date": "2013-10-16T11:55:04Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 1,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "1_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "820e0399-43cf-474a-b04a-e8b57513de1c"
+    },
+    "SyncClientId": {
+        "$1E_1": 1,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Авиастроение",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 7,
+    "ID": 2,
+    "Modified": "2015-07-13T14:26:37.000Z",
+    "Created": "2013-10-16T11:55:04.000Z",
+    "Author": {
+        "$1E_1": 1073741823,
+        "$2e_1": "System Account"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 5,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 200,
+    "GUID": {
+        "_m_guidString$p$0": "96046e62-d564-49ff-aa39-37f2dfc162fb"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/2_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2013-10-16T11:55:04Z",
+    "Created_x0020_Date": "2013-10-16T11:55:04Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 2,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "2_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "e38a1cfc-9fbc-4142-b718-564d8307a604"
+    },
+    "SyncClientId": {
+        "$1E_1": 2,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Авиапроисшествия",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 8,
+    "ID": 3,
+    "Modified": "2015-07-13T14:26:30.000Z",
+    "Created": "2013-10-16T11:55:04.000Z",
+    "Author": {
+        "$1E_1": 1073741823,
+        "$2e_1": "System Account"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 6,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 300,
+    "GUID": {
+        "_m_guidString$p$0": "4f74a544-d304-4c2b-94f3-8d6a6529a299"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/3_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2013-10-16T11:55:04Z",
+    "Created_x0020_Date": "2013-10-16T11:55:04Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 3,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "3_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "397aea72-d45a-4c24-8efc-034185448325"
+    },
+    "SyncClientId": {
+        "$1E_1": 3,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Аэропорты",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 2,
+    "ID": 4,
+    "Modified": "2015-07-13T14:22:08.000Z",
+    "Created": "2013-12-04T11:37:44.000Z",
+    "Author": {
+        "$1E_1": 1073741823,
+        "$2e_1": "System Account"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 3,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 400,
+    "GUID": {
+        "_m_guidString$p$0": "123d9efe-de2f-49ac-a79c-432831a68ed8"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/4_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2013-12-04T11:37:44Z",
+    "Created_x0020_Date": "2013-12-04T11:37:44Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 4,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "4_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "9ea1e8c9-b98d-45cc-82d5-a42fa776861a"
+    },
+    "SyncClientId": {
+        "$1E_1": 4,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Деловая авиация",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 9,
+    "ID": 5,
+    "Modified": "2015-07-13T14:26:23.000Z",
+    "Created": "2014-08-25T07:06:19.000Z",
+    "Author": {
+        "$1E_1": 51,
+        "$2e_1": "Богомолова Ольга Дмитриевна"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 3,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 500,
+    "GUID": {
+        "_m_guidString$p$0": "67a16033-534b-4ae4-b008-bbda57bc830e"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/5_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2014-08-25T07:06:19Z",
+    "Created_x0020_Date": "2014-08-25T07:06:19Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 5,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "5_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "d3006e4b-33d8-4c3d-92d0-0567890e14e2"
+    },
+    "SyncClientId": {
+        "$1E_1": 5,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "События",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 10,
+    "ID": 9,
+    "Modified": "2015-07-13T14:26:16.000Z",
+    "Created": "2014-10-10T08:41:56.000Z",
+    "Author": {
+        "$1E_1": 51,
+        "$2e_1": "Богомолова Ольга Дмитриевна"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 3,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 900,
+    "GUID": {
+        "_m_guidString$p$0": "68bde075-68dc-4792-960c-c6612f296a90"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/9_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2014-10-10T08:41:56Z",
+    "Created_x0020_Date": "2014-10-10T08:41:56Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 9,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "9_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "ea805920-c511-44b4-a33d-9d98e4a0be19"
+    },
+    "SyncClientId": {
+        "$1E_1": 9,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Новости о DME",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 1,
+    "ID": 11,
+    "Modified": "2015-07-13T14:21:58.000Z",
+    "Created": "2015-07-13T14:19:05.000Z",
+    "Author": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 2,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 1100,
+    "GUID": {
+        "_m_guidString$p$0": "341746bd-5cd6-455f-ac46-dd4d77ba9472"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/11_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2015-07-13T14:19:05Z",
+    "Created_x0020_Date": "2015-07-13T14:19:05Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 11,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "11_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "da730750-de09-4906-8a0f-6aacf9cd580c"
+    },
+    "SyncClientId": {
+        "$1E_1": 11,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Шереметьево",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 3,
+    "ID": 12,
+    "Modified": "2015-07-13T14:22:17.000Z",
+    "Created": "2015-07-13T14:20:22.000Z",
+    "Author": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 2,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 1200,
+    "GUID": {
+        "_m_guidString$p$0": "9f4ed843-3468-4e4d-82d9-dd354dd3f34c"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/12_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2015-07-13T14:20:22Z",
+    "Created_x0020_Date": "2015-07-13T14:20:22Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 12,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "12_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "0a1b03b7-b4c6-4d5e-b6da-1e6ffd79c459"
+    },
+    "SyncClientId": {
+        "$1E_1": 12,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Внуково",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 4,
+    "ID": 13,
+    "Modified": "2015-07-13T14:22:25.000Z",
+    "Created": "2015-07-13T14:20:29.000Z",
+    "Author": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 2,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 1300,
+    "GUID": {
+        "_m_guidString$p$0": "dc2c7d6c-d24d-4942-9d97-9613b54de70a"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/13_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2015-07-13T14:20:29Z",
+    "Created_x0020_Date": "2015-07-13T14:20:29Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 13,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "13_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "e35199c5-c658-4ede-ad0e-43f837670018"
+    },
+    "SyncClientId": {
+        "$1E_1": 13,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Новости туризма",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 6,
+    "ID": 14,
+    "Modified": "2015-07-13T14:26:52.000Z",
+    "Created": "2015-07-13T14:20:43.000Z",
+    "Author": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 2,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 1400,
+    "GUID": {
+        "_m_guidString$p$0": "625f9f33-5bb9-4ac8-9777-de2029548dfb"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/14_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2015-07-13T14:20:43Z",
+    "Created_x0020_Date": "2015-07-13T14:20:43Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 14,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "14_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "2ef5631a-d36d-4a16-9359-236521592f96"
+    },
+    "SyncClientId": {
+        "$1E_1": 14,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}, {
+    "ContentTypeId": {
+        "$c_1": "0x00F9B38D4C045D0D4C890B02754CFE2C46"
+    },
+    "Title": "Блогосфера",
+    "_ModerationComments": null,
+    "File_x0020_Type": null,
+    "order0": 11,
+    "ID": 15,
+    "Modified": "2015-07-13T14:26:08.000Z",
+    "Created": "2015-07-13T14:20:56.000Z",
+    "Author": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "Editor": {
+        "$1E_1": 49,
+        "$2e_1": "Меркулов Андрей Михайлович"
+    },
+    "_HasCopyDestinations": null,
+    "_CopySource": null,
+    "owshiddenversion": 2,
+    "WorkflowVersion": 1,
+    "_UIVersion": 512,
+    "_UIVersionString": "1.0",
+    "Attachments": false,
+    "_ModerationStatus": 0,
+    "InstanceID": null,
+    "Order": 1500,
+    "GUID": {
+        "_m_guidString$p$0": "fbcfc822-1186-403d-bab1-ee8abdf9ea41"
+    },
+    "WorkflowInstanceID": null,
+    "FileRef": "/News/Lists/Categories/15_.000",
+    "FileDirRef": "/News/Lists/Categories",
+    "Last_x0020_Modified": "2015-07-13T14:20:56Z",
+    "Created_x0020_Date": "2015-07-13T14:20:56Z",
+    "FSObjType": "0",
+    "SortBehavior": {
+        "$1E_1": 15,
+        "$2e_1": "0"
+    },
+    "FileLeafRef": "15_.000",
+    "UniqueId": {
+        "_m_guidString$p$0": "d0b95619-8b79-4ed5-81de-a1ea7968f7a2"
+    },
+    "SyncClientId": {
+        "$1E_1": 15,
+        "$2e_1": null
+    },
+    "ProgId": "",
+    "ScopeId": "{73A3ABE8-E52C-416E-AD2B-AD96CB0101EB}",
+    "MetaInfo": "",
+    "_Level": 1,
+    "_IsCurrentVersion": true,
+    "ItemChildCount": "0",
+    "FolderChildCount": "0",
+    "AppAuthor": null,
+    "AppEditor": null,
+    "ITEM_ATTACHMENTS": []
+}]
