@@ -35,7 +35,7 @@
     background: white;
     transition: transform .1s ease, box-shadow .1s ease;
 }
-.button:active{
+.button.pressed{
     box-shadow: inset 0px 11px 20px 0px rgba(115,115,115,1);
 
 	transform:translateY(11px);
