@@ -1,19 +1,21 @@
-
-.drumMachine{
-	 justify-content: space-around;
-	position:absolute;
-	display:flex;
-	flex-wrap: wrap;
-	top:50%;
-	left:50%;
-	width: 800px;
-	height: 600px;
-	background:black;
-	margin: -300px 0 0 -400px;
-	align-content:center;
-
-	
+.drumMachine {
+    -moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
+    justify-content: space-around;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    background: black;
+    margin: -300px 0 0 -400px;
+    align-content: center;
 }
+
 .info {
     font-family: 'Russo One', sans-serif;
     position: absolute;
@@ -22,43 +24,54 @@
     left: 195px;
     font-size: 30px;
 }
-.button {
 
+.button {
     align-content: center;
     cursor: pointer;
     width: 20%;
     height: 20%;
     margin: 20px 10px;
     border-radius: 10px;
-    box-shadow: 0px 10px 0px 0px rgba(115,115,115,1);
-
+    box-shadow: 0px 10px 0px 0px rgba(115, 115, 115, 1);
     background: white;
     transition: transform .1s ease, box-shadow .1s ease;
 }
-.button.pressed{
-    box-shadow: inset 0px 11px 20px 0px rgba(115,115,115,1);
 
-	transform:translateY(11px);
+.button.pressed {
+    box-shadow: inset 0px 11px 20px 0px rgba(115, 115, 115, 1);
+    transform: translateY(11px);
 }
-.bname{
+
+.bname {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     text-transform: uppercase;
     padding: 15px;
     font: 17px "Comfortaa", Helvetica, Arial, sans-serif;
     font-weight: bold;
     /* line-height: 40px; */
     text-align: center;
-        }
-.bname::selection, .key::selection{
-   background: transparent;
 }
-.key{
-     font: 60px "Russo One", Helvetica, Arial, sans-serif;
+
+.bname::selection,
+.key::selection {
+    background: transparent;
+}
+
+.key {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font: 60px "Russo One", Helvetica, Arial, sans-serif;
     position: relative;
     margin: 0 0 0 90px;
     color: red;
     opacity: .2;
-
 }
+
 .copy {
     position: absolute;
     width: 400px;
