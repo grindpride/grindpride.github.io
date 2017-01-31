@@ -1,4 +1,14 @@
+* {
+    box-sizing: border-box;
+       /*cursor: none;*/
+}
+
+html {
+
+    overflow-y: scroll;
+}
 .layout {
+
     position: absolute;
     background: #808080;
     width: 1280px;
@@ -10,7 +20,8 @@
 
 .layout__machine {
     position: absolute;
-    background-image: url(../images/dragon/machine.png);
+    background: url(../images/dragon/machine.svg) center no-repeat;
+    background-size: cover;
     width: 750px;
     height: 510px;
     top: 50%;
@@ -30,15 +41,17 @@
 }
 
 .layout__button {
-    cursor: pointer;
+     
+    /*cursor: pointer;*/
     margin-right: 15px;
     margin-bottom: 12px;
     background: url(../images/dragon/button.png) center no-repeat;
+    background-size: cover;
     width: 111px;
     height: 93px;
 }
 
-.layout__button:active {
+.layout__button.pressed {
     transform: translateY(3px);
     background: url(../images/dragon/press-button.png) no-repeat;
 }
