@@ -12,19 +12,20 @@ $(document).ready(function() {
         el.pause();
         el.currentTime = 0;
     };
-    // butt.mousedown(function() {
-    //     $(this).addClass('pressed');
-    //     s = $(this).find('audio')[0];
-    //     playBeat(s);
-    // });
-    // butt.mouseup(function() {
+    butt.mousedown(function() {
+        sw = $(this);
+        sw.addClass('pressed');
+        swag = sw.find('audio')[0];
+        playBeat(swag);
+    });
+    $(document).mouseup(function() {
 
-    //     s = $('.pressed').find('.loop')[0];
-    //     if (s != undefined) {
-    //         stopBeat(s);
-    //     }
-    //     butt.removeClass('pressed');
-    // });
+        // s = $('.pressed').find('.loop')[0];
+        if (swag != undefined) {
+            stopBeat(swag);
+        }
+        sw.removeClass('pressed');
+    });
     var flagQ = true;
     var flagW = true;
     var flagU = true;

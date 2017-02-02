@@ -42,7 +42,7 @@ html {
 
 .layout__button {
      
-    /*cursor: pointer;*/
+    cursor: pointer;
     margin-right: 15px;
     margin-bottom: 12px;
     background: url(../images/dragon/button.png) center no-repeat;
