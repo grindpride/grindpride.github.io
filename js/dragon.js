@@ -1,6 +1,8 @@
 $(document).ready(function() {
     console.log("Poehali!");
     var butt = $('.layout__button');
+    var swag;
+    var sw;
 
     function playBeat(el) {
         el.pause();
@@ -12,33 +14,23 @@ $(document).ready(function() {
         el.pause();
         el.currentTime = 0;
     };
+
     butt.mousedown(function() {
         sw = $(this);
         sw.addClass('pressed');
         swag = sw.find('audio')[0];
         playBeat(swag);
     });
-    $(document).mouseup(function() {
 
-        // s = $('.pressed').find('.loop')[0];
+    $(document).mouseup(function() {
         if (swag != undefined) {
-            stopBeat(swag);
+            if (sw.find('audio').attr('loop') === 'loop') {
+                stopBeat(swag);
+            }
+            sw.removeClass('pressed');
         }
-        sw.removeClass('pressed');
     });
-    var flagQ = true;
-    var flagW = true;
-    var flagU = true;
-    var flagI = true;
-    var flagA = true;
-    var flagS = true;
-    var flagH = true;
-    var flagJ = true;
-    var flagZ = true;
-    var flagX = true;
-    var flagB = true;
-    var flagN = true;
-    var flagBassLoop = true;
+
 
     function stopAnotherBass() {
         a = $('.bass');
@@ -48,194 +40,108 @@ $(document).ready(function() {
             stopBeat(as);
         });
     }
-    $(document).keydown(function(eventObject) {
-        var k = eventObject.which;
-        flagBassLoop = flagQ && flagW && flagU && flagI;
-        // console.log('Клавиша клавиатуры приведена в нажатое состояние. Код вводимого символа - ' + eventObject.which);
-        if (k === 81 && flagQ) {
-      stopAnotherBass();
-            var b = $('.button1');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagQ = false;
 
-        }
-        if (k === 87 && flagW) {
-        	stopAnotherBass();
-            var b = $('.button2');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagW = false;
 
+    var flags = {
+        81: {
+            isPlaying: false,
+            name: '.button1',
+            bass: true
+        },
+        87: {
+            isPlaying: false,
+            name: '.button2',
+            bass: true
+        },
+        85: {
+            isPlaying: false,
+            name: '.button3',
+            bass: true
+        },
+        73: {
+            isPlaying: false,
+            name: '.button4',
+            bass: true
+        },
+        65: {
+            isPlaying: false,
+            name: '.button5',
+            bass: false
+        },
+        83: {
+            isPlaying: false,
+            name: '.button6',
+            bass: false
+        },
+        72: {
+            isPlaying: false,
+            name: '.button7',
+            bass: false
+        },
+        74: {
+            isPlaying: false,
+            name: '.button8',
+            bass: false
+        },
+        90: {
+            isPlaying: false,
+            name: '.button9',
+            bass: false,
+            beat: true
+        },
+        88: {
+            isPlaying: false,
+            name: '.button10',
+            bass: false,
+            beat: true
+        },
+        66: {
+            isPlaying: false,
+            name: '.button11',
+            bass: false,
+            beat: true
+        },
+        78: {
+            isPlaying: false,
+            name: '.button12',
+            bass: false,
+            beat: true
         }
-        if (k === 85 && flagU) {
-        	stopAnotherBass();
-            var b = $('.button3');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagU = false;
-        }
-        if (k === 73 && flagI) {
-        	stopAnotherBass();
-            var b = $('.button4');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagI = false;
-        }
-        if (k === 65 && flagA) {
-            var b = $('.button5');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagA = false;
-        }
-        if (k === 83 && flagS) {
-            var b = $('.button6');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagS = false;
-        }
-        if (k === 72 && flagH) {
-            var b = $('.button7');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagH = false;
-        }
-        if (k === 74 && flagJ) {
-            var b = $('.button8');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagJ = false;
-        }
-        if (k === 90 && flagZ) {
-            var b = $('.button9');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagZ = false;
-        }
+    }
 
-        if (k === 88 && flagX) {
-            var b = $('.button10');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagX = false;
-        }
+    $(document).keydown(function(e) {
+        var k = e.which;
+        if (flags[k] !== undefined) {
+            var but = flags[k];
 
-        if (k === 66 && flagB) {
-            var b = $('.button11');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagB = false;
+            if (!but.isPlaying) {
+                if (but.bass) {
+                    stopAnotherBass();
+                }
+                var s = $(but.name);
+                var sw = s.find('audio')[0];
+                s.addClass('pressed');
+                playBeat(sw);
+                but.isPlaying = true;
+            }
         }
-
-        if (k === 78 && flagN) {
-            var b = $('.button12');
-            var s = b.find('audio')[0];
-            b.addClass('pressed');
-            playBeat(s);
-            flagN = false;
-        }
-
 
     });
 
-    $(document).keyup(function(eventObject) {
-        var u = eventObject.which;
-        // flagBassLoop = flagQ && flagW && flagU && flagI;
-        // console.log('Клавиша клавиатуры приведена в нажатое состояние. Код вводимого символа - ' + eventObject.which);
-        if (u === 81) {
-            flagQ = true;
-            b = $('.button1');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
+    $(document).keyup(function(e) {
+        var k = e.which;
+        if (flags[k] !== undefined) {
 
-        }
-        if (u === 87) {
-            flagW = true;
-            b = $('.button2');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
+            var but = flags[k];
+            if (!but.beat) {
+                s = $(but.name).find('audio')[0];
+                stopBeat(s);
 
+            }
+            $(but.name).removeClass('pressed');
+            but.isPlaying = false;
         }
-        if (u === 85) {
-            flagU = true;
-            b = $('.button3');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-
-        }
-        if (u === 73) {
-            flagI = true;
-            b = $('.button4');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-        }
-        if (u === 65) {
-            flagA = true;
-            b = $('.button5');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-        }
-        if (u === 83) {
-            flagS = true;
-            b = $('.button6');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-        }
-        if (u === 72) {
-            flagH = true;
-            b = $('.button7');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-        }
-        if (u === 74) {
-            flagJ = true;
-            b = $('.button8');
-            b.removeClass('pressed');
-            s = b.find('audio')[0];
-            stopBeat(s);
-        }
-        if (u === 90) {
-            flagZ = true;
-            b = $('.button9');
-            b.removeClass('pressed');
-        }
-        if (u === 88) {
-            flagX = true;
-            b = $('.button10');
-            b.removeClass('pressed');
-        }
-
-        if (u === 66) {
-            flagB = true;
-            b = $('.button11');
-            b.removeClass('pressed');
-        }
-
-        if (u === 78) {
-            flagN = true;
-            b = $('.button12');
-            b.removeClass('pressed');
-        }
-
-
 
     });
+
 });
