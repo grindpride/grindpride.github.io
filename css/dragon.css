@@ -1,19 +1,25 @@
 * {
     box-sizing: border-box;
-       /*cursor: none;*/
+    /*cursor: none;*/
 }
 
 html {
-
     overflow-y: scroll;
 }
+
 .layout {
-     -ms-interpolation-mode: nearest-neighbor; /* IE 7+  (не стандартное свойство) */
-  image-rendering: -webkit-optimize-contrast; /* Safari 6, UC Browser 9.9 */
-  image-rendering: -webkit-crisp-edges; /* Safari 7+ */
-  image-rendering: -moz-crisp-edges; /* Firefox 3.6+ */
-  image-rendering: -o-crisp-edges; /* Opera 12 */
-  image-rendering: pixelated; /* Chrome 41+ and Opera 26+ */
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE 7+  (не стандартное свойство) */
+    image-rendering: -webkit-optimize-contrast;
+    /* Safari 6, UC Browser 9.9 */
+    image-rendering: -webkit-crisp-edges;
+    /* Safari 7+ */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox 3.6+ */
+    image-rendering: -o-crisp-edges;
+    /* Opera 12 */
+    image-rendering: pixelated;
+    /* Chrome 41+ and Opera 26+ */
     position: absolute;
     background: #808080;
     width: 1280px;
@@ -35,6 +41,45 @@ html {
     font-size: 40px;
 }
 
+.dynamic {
+    position: absolute;
+    background: url(../images/dragon/dynamic.png) center no-repeat;
+    width: 200px;
+    height: 200px;
+    top: 274px;
+    left: 529px;
+}
+#red {
+position: absolute;
+    left: 612px;
+    top: 164px;
+    margin: 10px;
+    display: inline-block;
+    height: 99px;
+}
+
+
+
+#red .noUi-connect {
+    background: #c0392b;
+}
+.noUi-handle {
+     background: url(../images/dragon/ranger.png) center no-repeat;
+     border: none;
+    border-radius: 0;
+    cursor: grab;
+     cursor:-webkit-grab;
+    box-shadow: none;
+ }
+ .noUi-target {
+     background: none; 
+     border-radius: 0; 
+     border: none; 
+     box-shadow:  none; 
+}
+
+
+
 .button_panel {
     align-content: flex-start;
     position: absolute;
@@ -47,11 +92,9 @@ html {
 }
 
 .layout__button {
-     
     cursor: pointer;
     margin-right: 15px;
     margin-bottom: 12px;
-    background: url(../images/dragon/button.png) center no-repeat;
     background-size: cover;
     width: 111px;
     height: 93px;
@@ -62,10 +105,211 @@ html {
     background: url(../images/dragon/press-button.png) no-repeat;
 }
 
+
+/*BASS*/
+
+.layout__button.button1 {
+    background: url(../images/dragon/BASS_01_OFF.png) center no-repeat;
+}
+
+.layout__button.button1.pressed {
+    background: url(../images/dragon/BASS_01_ON.png) center no-repeat;
+}
+
+.layout__button.button2 {
+    background: url(../images/dragon/BASS_02_OFF.png) center no-repeat;
+}
+
+.layout__button.button2.pressed {
+    background: url(../images/dragon/BASS_02_ON.png) center no-repeat;
+}
+
+.layout__button.button3 {
+    background: url(../images/dragon/BASS_03_OFF.png) center no-repeat;
+}
+
+.layout__button.button3.pressed {
+    background: url(../images/dragon/BASS_03_ON.png) center no-repeat;
+}
+
+.layout__button.button4 {
+    background: url(../images/dragon/BASS_04_OFF.png) center no-repeat;
+}
+
+.layout__button.button4.pressed {
+    background: url(../images/dragon/BASS_04_ON.png) center no-repeat;
+}
+
+
+/*BEEP*/
+
+.layout__button.button5 {
+    background: url(../images/dragon/BEEP_C_OFF.png) center no-repeat;
+}
+
+.layout__button.button5.pressed {
+    background: url(../images/dragon/BEEP_C_ON.png) center no-repeat;
+}
+
+.layout__button.button6 {
+    background: url(../images/dragon/BEEP_E_OFF.png) center no-repeat;
+}
+
+.layout__button.button6.pressed {
+    background: url(../images/dragon/BEEP_E_ON.png) center no-repeat;
+}
+
+.layout__button.button7 {
+    background: url(../images/dragon/BEEP_G_OFF.png) center no-repeat;
+}
+
+.layout__button.button7.pressed {
+    background: url(../images/dragon/BEEP_G_ON.png) center no-repeat;
+}
+
+.layout__button.button8 {
+    background: url(../images/dragon/BEEP_B_OFF.png) center no-repeat;
+}
+
+.layout__button.button8.pressed {
+    background: url(../images/dragon/BEEP_B_ON.png) center no-repeat;
+}
+
+
+/*OTHER*/
+
+.layout__button.button9 {
+    background: url(../images/dragon/KICK_OFF.png) center no-repeat;
+}
+
+.layout__button.button9.pressed {
+    background: url(../images/dragon/KICK_ON.png) center no-repeat;
+}
+
+.layout__button.button10 {
+    background: url(../images/dragon/SNARE_OFF.png) center no-repeat;
+}
+
+.layout__button.button10.pressed {
+    background: url(../images/dragon/SNARE_ON.png) center no-repeat;
+}
+
+.layout__button.button11 {
+    background: url(../images/dragon/HIHAT_OFF.png) center no-repeat;
+}
+
+.layout__button.button11.pressed {
+    background: url(../images/dragon/HIHAT_ON.png) center no-repeat;
+}
+
+.layout__button.button12 {
+    background: url(../images/dragon/EFFECT_OFF.png) center no-repeat;
+}
+
+.layout__button.button12.pressed {
+    background: url(../images/dragon/EFFECT_ON.png) center no-repeat;
+}
+
+
+/*RIGHTS*/
+
 .rights {
+    display: flex;
+    justify-content: center;
     position: absolute;
-    background: url(../images/dragon/rights.png) center no-repeat;
     width: 100%;
     height: 60px;
-    bottom: 140px;
+    bottom: 170px;
+}
+
+.rights a div {
+    height: 60px;
+    width: 320px;
+}
+
+.rights_S {
+    background: url(../images/dragon/rightsS.png) center no-repeat;
+}
+
+.rights_G {
+    background: url(../images/dragon/rightsG.png) center no-repeat;
+}
+
+.rights_D {
+    background: url(../images/dragon/rightsD.png) center no-repeat;
+}
+
+/*DYNAMIC*/
+.dynamic {
+    position: relative;
+    background: url(../images/dragon/dynamic.png) center no-repeat;
+width: 90px;
+    height: 90px;
+    top: 332px;
+    left: 584px;
+}
+
+.dynamic.active {
+    -webkit-animation: 0.1s tremor ease-out infinite;  
+    animation: 0.1s tremor ease-out infinite;    
+}
+@-webkit-keyframes tremor {
+    0%, 25% {
+       
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%, 100% {
+        
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+@-moz-keyframes tremor {
+    0%, 25% {
+       
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%, 100% {
+     
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+@-ms-keyframes tremor {
+    0%, 25% {
+       
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%, 100% {
+        left: 1px;
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+@-o-keyframes tremor {
+    0%, 25% {
+       
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%, 100% {
+       
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+@keyframes tremor {
+    0%, 25% {
+       
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%, 100% {
+        
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
 }

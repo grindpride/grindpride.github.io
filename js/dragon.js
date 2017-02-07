@@ -3,31 +3,68 @@ $(document).ready(function() {
     var butt = $('.layout__button');
     var swag;
     var sw;
+    var dyn = $('.dynamic');
+
+    var sliders = document.getElementsByClassName('sliders');
+
+    function setVolume() {
+        var volume = Math.abs(sliders[0].noUiSlider.get());
+        butt.each(function() {
+            $(this).find('audio')[0].volume = volume;
+        });
+
+
+    }
+
+    noUiSlider.create(sliders[0], {
+        start: -0.5,
+        orientation: "vertical",
+        range: {
+            'min': -1,
+            'max': 0
+        },
+    });
+    sliders[0].noUiSlider.on('slide', setVolume);
+    setVolume();
+    // Bind the color changing function
+    // to the slide event.
+    // sliders[i].noUiSlider.on('slide', setColor);
+
 
     function playBeat(el) {
-        el.pause();
-        el.currentTime = 0;
-        el.play();
+        el[0].pause();
+        el[0].currentTime = 0;
+        el[0].play();
+
+        dyn.addClass('active');
     };
 
-    function stopBeat(el) {
-        el.pause();
-        el.currentTime = 0;
+    function stopBeat(el,el2) {
+         var check = $('.layout__button');
+         el2.removeClass('pressed');
+        if (el.attr('loop') === 'loop') {
+            el[0].pause();
+            el[0].currentTime = 0;
+        }
+        if(!check.hasClass('pressed')){
+             dyn.removeClass('active');
+        }
+        
+        
     };
 
     butt.mousedown(function() {
         sw = $(this);
         sw.addClass('pressed');
-        swag = sw.find('audio')[0];
+        swag = sw.find('audio');
         playBeat(swag);
     });
 
     $(document).mouseup(function() {
         if (swag != undefined) {
-            if (sw.find('audio').attr('loop') === 'loop') {
-                stopBeat(swag);
-            }
             sw.removeClass('pressed');
+            stopBeat(swag,sw);
+
         }
     });
 
@@ -36,8 +73,8 @@ $(document).ready(function() {
         a = $('.bass');
         a.removeClass('pressed');
         a.each(function() {
-            as = $(this).find('audio')[0];
-            stopBeat(as);
+            as = $(this).find('audio');
+            stopBeat(as,a);
         });
     }
 
@@ -119,7 +156,7 @@ $(document).ready(function() {
                     stopAnotherBass();
                 }
                 var s = $(but.name);
-                var sw = s.find('audio')[0];
+                var sw = s.find('audio');
                 s.addClass('pressed');
                 playBeat(sw);
                 but.isPlaying = true;
@@ -133,11 +170,11 @@ $(document).ready(function() {
         if (flags[k] !== undefined) {
 
             var but = flags[k];
-            if (!but.beat) {
-                s = $(but.name).find('audio')[0];
-                stopBeat(s);
 
-            }
+            s = $(but.name).find('audio');
+            stopBeat(s, $(but.name));
+
+
             $(but.name).removeClass('pressed');
             but.isPlaying = false;
         }
