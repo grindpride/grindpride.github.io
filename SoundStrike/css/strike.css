@@ -1,0 +1,91 @@
+body {
+	box-sizing:border-box;
+
+}
+.proto__wrapper{
+		flex-direction: column;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.wrapper {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top:50px;
+}
+.soundlist {
+	display: flex;
+	flex-direction: column;
+}
+.soundlist p,
+.start,
+.stop,
+.clear {
+	  font-family: 'Comfortaa', sans-serif;
+	cursor: pointer;
+	padding: 10px;
+	background: green;
+	margin: 5px;
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+}
+.soundcolumn{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+.soundcolumn.active{
+border: solid 1px green;
+/*background: MediumSpringGreen;*/
+}
+
+.soundcolumn div{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background: lightgreen;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+
+.soundcolumn div.pressed{
+	background:LightCoral ;
+}
+
+.control{
+	/*margin: 50px;*/
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.stop{
+	background: crimson;
+}
+.info{
+	display: block;
+    font-family: 'Russo One', sans-serif;
+    top: 15px;
+    left: 195px;
+    font-size: 50px;
+    align-self: center;
+    margin-top: 20px;
+}
+.copy {
+    position: absolute;
+    width: 400px;
+    text-align: center;
+    align-self: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    margin: 0 -200px;
+    top: 563px;
+    left: 50%;
+}
