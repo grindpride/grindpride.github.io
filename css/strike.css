@@ -1,92 +1,121 @@
 body {
-	box-sizing:border-box;
+    box-sizing: border-box;
+}
 
+.proto__wrapper {
+    width: 1072px;
+    height: 628px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(../images/strike/pad.png) no-repeat;
 }
-.proto__wrapper{
-		flex-direction: column;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+
 .wrapper {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin-top:50px;
+    position: relative;
+    display: flex;
+    /*justify-content: center;*/
+    margin: 15px 0 0 45px;
 }
+
 .soundlist {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .soundlist p,
 .start,
 .stop,
 .clear {
-	  font-family: 'Comfortaa', sans-serif;
-	cursor: pointer;
-	padding: 10px;
-	background: green;
-	margin: 5px;
-	border-radius: 5px;
-	width: 80px;
-	height: 30px;
-	text-align: center;
-	line-height: 30px;
-}
-.soundcolumn{
-	display: flex;
-	flex-direction: column;
-	border-radius: 5px;
-}
-.soundcolumn.active{
-border: solid 1px green;
-/*background: MediumSpringGreen;*/
+    font-family: 'Comfortaa', sans-serif;
+    cursor: pointer;
+    background: url(../images/strike/bigbutton.png) no-repeat;
+    margin-top: 1px;
+    border-radius: 5px;
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
 }
 
-.soundcolumn div{
-	cursor: pointer;
-	width: 30px;
-	height: 30px;
-	background: lightgreen;
-	padding: 10px;
-	margin: 5px;
-	border-radius: 5px;
-	text-align: center;
-	line-height: 30px;
+.soundlist p {
+    color: yellow;
 }
 
-.soundcolumn div.pressed{
-	background:LightCoral ;
+.soundcolumn {
+    display: flex;
+    flex-direction: column;
+
 }
 
-.control{
-	/*margin: 50px;*/
-	position: relative;
-	display: flex;
-	justify-content: center;
+.soundcolumn div {
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    background: url(../images/strike/offbutton.png) no-repeat;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
 }
 
-.stop,
+.soundcolumn div.pressed {
+    background: url(../images/strike/onbutton.png) no-repeat;
+}
+
+.control {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.start {
+    color: green;
+}
+.stop{
+	color: crimson;
+}
 .clear{
-	background: crimson;
+	color: yellow;
 }
-.info{
-	display: block;
+.currentColumn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.thisCol {
+    position: relative;
+    background: url(../images/strike/diodoff.png) no-repeat;
+    width: 13px;
+    height: 25px;
+    margin-right: 42px;
+    left: 73px;
+}
+.thisCol.active {
+    background: url(../images/strike/diodon.png) no-repeat;
+
+}
+.info {
+    display: block;
     font-family: 'Russo One', sans-serif;
-    top: 15px;
     left: 195px;
-    font-size: 50px;
+    font-size: 40px;
     align-self: center;
-    margin-top: 20px;
+    color: white;
 }
+
 .copy {
-    position: absolute;
+    /*position: absolute;*/
     width: 400px;
     text-align: center;
     align-self: center;
     font-family: 'Russo One', sans-serif;
     font-size: 20px;
-    margin: 0 -200px;
+    margin: 10px;
     top: 563px;
     left: 50%;
+    color: white;
 }

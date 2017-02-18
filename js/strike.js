@@ -14,7 +14,7 @@ $(document).ready(function() {
     }
     var nextStep = function() {
         var col = $('.soundcolumn');
-
+        var diod = $('.thisCol');
         var thisColumn = col.index($('.active'));
         var row = col.eq(thisColumn).children('.pressed');
         for(var i = 0; i<row.length;i++){
@@ -31,7 +31,8 @@ $(document).ready(function() {
 
         col.removeClass('active');
         col.eq(nextColumn).addClass('active');
-       
+        diod.removeClass('active');
+        diod.eq(nextColumn).addClass('active');
     };
 
 
