@@ -1,14 +1,24 @@
 body {
+    /*position: absolute;*/
     box-sizing: border-box;
-    background: url(../images/strike/fon.jpg) no-repeat;
-    background-size: 100% auto;
+}
+
+.fon {
+    /*top: 50%;*/
+    position: relative;
+    background: url(../images/strike/fon.jpg) center no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 700px;
+    margin: 7% auto 0 auto;
 }
 
 .proto__wrapper {
+    transform: scale(0.6);
     position: absolute;
     top: 50%;
     left: 50%;
-    margin: -312px 0 0 -526px;
+    margin: -312px 0 0 -536px;
     width: 1072px;
     height: 628px;
     flex-direction: column;
