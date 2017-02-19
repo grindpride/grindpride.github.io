@@ -1,8 +1,14 @@
 body {
     box-sizing: border-box;
+    background: url(../images/strike/fon.jpg) no-repeat;
+    background-size: 100% auto;
 }
 
 .proto__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -312px 0 0 -526px;
     width: 1072px;
     height: 628px;
     flex-direction: column;
@@ -15,7 +21,6 @@ body {
 .wrapper {
     position: relative;
     display: flex;
-    /*justify-content: center;*/
     margin: 15px 0 0 45px;
 }
 
@@ -46,7 +51,6 @@ body {
 .soundcolumn {
     display: flex;
     flex-direction: column;
-
 }
 
 .soundcolumn div {
@@ -74,12 +78,15 @@ body {
 .start {
     color: green;
 }
-.stop{
-	color: crimson;
+
+.stop {
+    color: crimson;
 }
-.clear{
-	color: yellow;
+
+.clear {
+    color: yellow;
 }
+
 .currentColumn {
     position: relative;
     display: flex;
@@ -94,10 +101,11 @@ body {
     margin-right: 42px;
     left: 73px;
 }
+
 .thisCol.active {
     background: url(../images/strike/diodon.png) no-repeat;
-
 }
+
 .info {
     display: block;
     font-family: 'Russo One', sans-serif;
