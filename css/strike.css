@@ -1,10 +1,8 @@
 body {
-    /*position: absolute;*/
     box-sizing: border-box;
 }
 
 .fon {
-    /*top: 50%;*/
     position: relative;
     background: url(../images/strike/fon.jpg) center no-repeat;
     background-size: cover;
