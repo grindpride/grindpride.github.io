@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
 
     noUiSlider.create(sliders[0], {
-        start: 180,
+        start: 240,
         step: 1,
         range: {
             'min': 120,
