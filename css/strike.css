@@ -3,12 +3,14 @@ body {
 }
 
 .fon {
-    position: relative;
+    position: absolute;
     background: url(../images/strike/fon.jpg) center no-repeat;
     background-size: cover;
     width: 1200px;
-    height: 700px;
-    margin: 7% auto 0 auto;
+    height: 100%;
+    top:50%;
+    left:50%;
+    margin: -350px 0 0 -600px;
 }
 
 .proto__wrapper {
@@ -24,6 +26,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     background: url(../images/strike/pad.png) no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
@@ -63,7 +66,7 @@ body {
 
 .soundcolumn div {
     cursor: pointer;
-    width: 55px;
+    width: 56px;
     height: 55px;
     background: url(../images/strike/offbutton.png) no-repeat;
     margin-top: 5px;
@@ -95,6 +98,62 @@ body {
     color: yellow;
 }
 
+.screen {
+    cursor: default;
+    display: flex;
+    background: url(../images/strike/screen.png) no-repeat;
+    overflow: hidden;
+    width: 93px;
+    height: 48px;
+    padding-left: 8px;
+    padding-top: 2px;
+    color: #569933;
+    font-size: 47px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#red {
+    /*position: absolute;*/
+/*    left: 612px;
+    top: 164px;*/
+    margin: 10px;
+    display: inline-block;
+    /*height: 99px;*/
+        width: 140px;
+        height: 31px;
+}
+
+#red .noUi-connect {
+    background: #c0392b;
+}
+
+.noUi-handle {
+    background: url(../images/strike/slider.png) center no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 0;
+    cursor: grab;
+    cursor: -webkit-grab;
+    box-shadow: none;
+    top: 2px; 
+}
+.noUi-base {
+    background: url(../images/strike/road.png) center no-repeat;
+        background-size: cover;
+        /*height: 31px;*/
+}
+.noUi-target {
+    background: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+
 .currentColumn {
     position: relative;
     display: flex;
@@ -103,11 +162,12 @@ body {
 
 .thisCol {
     position: relative;
+    background-size: cover;
     background: url(../images/strike/diodoff2.png) no-repeat;
     width: 13px;
     height: 25px;
-    margin-right: 42px;
-    left: 73px;
+    margin-right: 43px;
+    left: 75px;
 }
 
 .thisCol.active {

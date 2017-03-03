@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>SoundStrike</title>
+    <link rel="stylesheet" href="css/nouislider.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Russo+One" rel="stylesheet">
+
     <link rel="stylesheet" href="css/strike.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+  
 </head>
 
 <body>
     <div class="fon">
         <div class="proto__wrapper">
-            <h1 class="info">Sound Strike v1.1</h1>
+            <h1 class="info">Sound Strike v1.2</h1>
             <div class="wrapper">
                 <div class="soundlist">
                     <p>Kick</p>
@@ -173,7 +177,9 @@
                 <div class="start">PLAY</div>
                 <div class="stop">STOP</div>
                 <div class="clear">CLEAR</div>
-                <input id="range" type="range" min="60" max="600" step="1" value="180"> 
+                <div class="sliders" id="red"></div>
+                <div class="screen fontsforweb_fontid_523"> 280
+                </div>
             </div>
             <div class="copy">
                 &copy; <a href="https://vk.com/grindpride">Grindpride Production</a>, 2017
@@ -199,6 +205,7 @@
         <source src="sounds/strike/blip.wav"></source>
     </audio>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/nouislider.js"></script>
     <script type="text/javascript" src="js/strike.js"></script>
 </body>
 

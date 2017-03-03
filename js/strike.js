@@ -1,12 +1,30 @@
 $(document).ready(function() {
     console.log("Poehali!");
     var button = $('.button');
-    var range = 60000/($('#range').val());
+    var range = 60000 / ( $('.screen').text());
     var t;
+    var isPlayin = false;
     button.click(function() {
         $(this).toggleClass('pressed');
     });
 
+    var sliders = document.getElementsByClassName('sliders');
+
+    function setBPM() {
+        var BPM = Math.round(sliders[0].noUiSlider.get());
+        $('.screen').text(BPM);
+    }
+
+    noUiSlider.create(sliders[0], {
+        start: 180,
+        step: 1,
+        range: {
+            'min': 120,
+            'max': 600
+        },
+    });
+    sliders[0].noUiSlider.on('slide', setBPM);
+    setBPM();
     function playBeat(el) {
         beat = $('.audio').eq(el)[0];
         beat.currentTime = 0;
@@ -32,10 +50,10 @@ $(document).ready(function() {
         col.eq(nextColumn).addClass('active');
         diod.removeClass('active');
         diod.eq(nextColumn).addClass('active');
-        range = 60000/($('#range').val());
+        range = 60000 / ( $('.screen').text());
         var t = setTimeout(nextStep, range);
         $('.stop').on('click', function() {
-            console.log('STAPH!!');
+            isPlayin = false;
             clearTimeout(t);
         });
     };
@@ -43,9 +61,10 @@ $(document).ready(function() {
 
 
     $('.start').click(function() {
-
-        var t = setTimeout(nextStep, range);
-
+        if (isPlayin === false) {
+            isPlayin = true;
+            var t = setTimeout(nextStep, range);
+        };
 
     });
 
