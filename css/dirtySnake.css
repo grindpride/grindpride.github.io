@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    /*margin-top: 50px;*/
+    margin: -240px 0 0 -320px;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    height: 480px;
+}
+
+.text__wrapper {
+    margin: -240px 0 0 -320px;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    height: 480px;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    border: 32px solid;
+    vertical-align: center;
+    display: block;
+    font-size: 26px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.text__wrapper.begin {
+    padding: 20px 30px;
+    /*display: none;*/
+}
+
+.text__wrapper.again {
+    padding: 50px 30px;
+    display: none;
+}
+
+.text {
+    color: #6F6F6F;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #36AC3B;
+    padding: 10px 10px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.green {
+    color: #36AC3B;
+}
+
+.brown {
+    color: #864b14;
+}
+
+.black {
+    color: black;
+}
+.score{
+	font-size: 60px;
+}
+.info {
+	position: absolute;
+	width: 600px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -300px 0 0 -300px;
+   /*margin-top: 5%;*/
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    text-align: center;
+}
+
+.copy {
+		position: absolute;
+	width: 600px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: 270px 0 0 -300px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    text-align: center;
+        
+}

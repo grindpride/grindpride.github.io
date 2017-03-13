@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Try Canvas</title>
+    <link rel="stylesheet" href="css/dirtySnake.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+	 <h1 class="info brown">Dirty Snake v.1.0</h1>
+    <div class="container">
+        <canvas height='480' width='640' id='example'>Ваш браузер слишком стар для этого дерьма</canvas>
+    </div>
+    <div class="text__wrapper begin">
+        <p class="text">Поедание <span class="green">зеленых</span> блоков добавляет скорость и очки, а <span class="brown">коричневых</span> добавляет только скорость. Игра заканчивается если вы врежетесь в себя или в <span class="black">стену</span>. Управление клавишами WASD или стрелками.</p>
+        <div class="button go" onclick="playGame()"> Начать игру </div>
+    </div>
+    <div class="text__wrapper again">
+        <p class="text">Поздравляем вы набрали <span class="score green">0</span> очков. Поделись результатом в <a href="https://vk.com/grindpride">группе проекта</a>. </p>
+        <div class="button go" onclick="playGame()" > Попробовать еще раз </div>
+    </div>
+                <div class="copy">
+                &copy; <a href="https://vk.com/grindpride">Grindpride Production</a>, 2017
+            </div>
+    <!--     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
+    <script type="text/javascript" src="js/dirtySnake.js"></script>
+</body>
+
+</html>
