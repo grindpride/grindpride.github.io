@@ -41,6 +41,7 @@
     display: block;
     font-size: 26px;
     font-family: 'Press Start 2P', cursive;
+    background-color: white;
 }
 
 .text__wrapper.begin {
@@ -79,6 +80,7 @@
 }
 .score{
 	font-size: 60px;
+    line-height: 130px;
 }
 
 .control {

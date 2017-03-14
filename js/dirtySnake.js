@@ -1,4 +1,3 @@
-function playGame() {
     var speed = 500;
     var mustGrow = false;
     var count = 0;
@@ -16,7 +15,7 @@ function playGame() {
     var leftArrow = document.getElementsByClassName("left");
     var rightArrow = document.getElementsByClassName("right");
     var bottomArrow = document.getElementsByClassName("bottom");
-    begin[0].style.display = 'none';
+    // begin[0].style.display = 'none';
     again[0].style.display = 'none';
     topArrow[0].onclick = function() {
         arrowControl(38);
@@ -315,6 +314,8 @@ function playGame() {
     gotApple();
     render();
 
+function playGame() {
+     begin[0].style.display = 'none';
     // setInterval(step,speed);
     var timerId = setTimeout(function tick() {
         step();
