@@ -2,12 +2,64 @@ function playGame() {
     var speed = 500;
     var mustGrow = false;
     var count = 0;
+    var snakePart = new rect('#6F6F6F');
+    var wall = new rect('#000');
+    var apple = new rect('#36AC3B');
+    var empty = new rect('#fff');
+    var shit = new rect('#864b14');
+    var dir = 'top';
+
     var begin = document.getElementsByClassName("begin");
     var again = document.getElementsByClassName("again");
     var score = document.getElementsByClassName("score");
-
+    var topArrow = document.getElementsByClassName("top");
+    var leftArrow = document.getElementsByClassName("left");
+    var rightArrow = document.getElementsByClassName("right");
+    var bottomArrow = document.getElementsByClassName("bottom");
     begin[0].style.display = 'none';
     again[0].style.display = 'none';
+    topArrow[0].onclick = function() {
+        arrowControl(38);
+    };
+    rightArrow[0].onclick = function() {
+        arrowControl(39);
+    };
+    bottomArrow[0].onclick = function() {
+        arrowControl(40);
+    };
+    leftArrow[0].onclick = function() {
+        arrowControl(37);
+    };
+
+    function arrowControl(el) {
+        var headX = snake[0][0];
+        var headY = snake[0][1];
+        var neckX = snake[1][0];
+        var neckY = snake[1][1];
+
+        switch (el) {
+
+            case 38:
+                if (!(headY > neckY)) {
+                    dir = 'top';
+                };
+                break;
+            case 39:
+                if (!(headX < neckX)) {
+                    dir = 'right';
+                };
+                break;
+            case 40:
+                if (!(headY < neckY)) {
+                    dir = 'bottom';
+                };
+                break;
+            case 37:
+                if (!(headX > neckX)) {
+                    dir = 'left';
+                };
+        }
+    }
 
     function rect(color) {
         this.color = color;
@@ -30,12 +82,6 @@ function playGame() {
         [9, 9],
         [9, 10]
     ];
-    var snakePart = new rect('#6F6F6F');
-    var wall = new rect('#000');
-    var apple = new rect('#36AC3B');
-    var empty = new rect('#fff');
-    var shit = new rect('#864b14');
-    var dir = 'top';
 
     document.onkeydown = function(event) {
 

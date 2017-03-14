@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Try Canvas</title>
+    <meta name="viewport" content="width=device-width,initial-scale = 0.5,user-scalable=no">
+    <title>Dirty Snake</title>
     <link rel="stylesheet" href="css/dirtySnake.css">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
 <body>
-	 <h1 class="info brown">Dirty Snake v.1.0</h1>
+	 <h1 class="info brown">Dirty Snake v.1.1</h1>
     <div class="container">
         <canvas height='480' width='640' id='example'>Ваш браузер слишком стар для этого дерьма</canvas>
     </div>
@@ -21,6 +22,13 @@
     <div class="text__wrapper again">
         <p class="text">Поздравляем вы набрали <span class="score green">0</span> очков. Поделись результатом в <a href="https://vk.com/grindpride">группе проекта</a>. </p>
         <div class="button go" onclick="playGame()" > Попробовать еще раз </div>
+    </div>
+    <div class="control">
+        <div class="key top"><div class="arrow arrowTop"></div></div>
+        <div class="key left"><div class="arrow arrowLeft"></div></div>
+        
+        <div class="key right"><div class="arrow arrowRight"></div></div>
+        <div class="key bottom"><div class="arrow arrowBottom"></div></div>
     </div>
                 <div class="copy">
                 &copy; <a href="https://vk.com/grindpride">Grindpride Production</a>, 2017
