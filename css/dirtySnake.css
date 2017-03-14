@@ -24,8 +24,7 @@
     left: 50%;
     width: 640px;
     height: 480px;
-    padding: 1px;
-    border: 1px solid;
+
 }
 
 .text__wrapper {
@@ -87,7 +86,6 @@
     width: 400px;
     height: 400px;
     position: relative;
-    /*top: 610px;*/
     left: 50%;
     margin: 20px 0 20px -200px;
     font-family: 'Press Start 2P', cursive;
@@ -147,8 +145,6 @@
 	height: 50px;
 	top: 20px;
     text-align: center;
-	/*left: 50%;*/
-	/*margin:50px 0 0 -300px;*/
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
     text-align: center;
