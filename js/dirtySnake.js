@@ -1,4 +1,7 @@
-    var speed = 500;
+
+
+function playGame() {
+        var speed = 500;
     var mustGrow = false;
     var count = 0;
     var snakePart = new rect('#6F6F6F');
@@ -313,8 +316,6 @@
     gotSnake();
     gotApple();
     render();
-
-function playGame() {
      begin[0].style.display = 'none';
     // setInterval(step,speed);
     var timerId = setTimeout(function tick() {
