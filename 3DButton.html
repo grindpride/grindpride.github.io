@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D button</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.3" /> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/3DButton.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="button1 purple">
+            <div class="button1__base">
+                <div class="button1__base_bottom"></div>
+                <div class="button1__base_top">
+                </div>
+                <div class="button1__base_screen">
+                    <p class="button__text_top button_text">TEXT TEXT</p>
+                    <p class="button__text_bottom button_text">TEXT</p>
+                </div>
+            </div>
+            <div class="button1__presspart leftPurple">
+                <div class="button1__top">
+                </div>
+                <div class="button1__front"></div>
+                <div class="button1__leftcut"></div>
+                <div class="button1__rightcut"></div>
+                <div class="button1__rightside"></div>
+            </div>
+            <div class="button1__presspart rightPurple">
+                <div class="button1__top"></div>
+                <div class="button1__front"></div>
+                <div class="button1__leftcut"></div>
+                <div class="button1__rightcut"></div>
+                <div class="button1__rightside"></div>
+            </div>
+        </div>
+        <div class="button2">
+            <div class="button2__base">
+                <div class="button2__base_bottom"></div>
+                <div class="button2__base_top"></div>
+            </div>
+            <div class="button2__presspart">
+                <div class="button1__top blueX"></div>
+                <div class="button1__front blue"></div>
+                <div class="button1__leftcut blue"></div>
+                <div class="button1__rightcut blue"></div>
+                <div class="button1__rightside blue"></div>
+            </div>
+        </div>
+        <div class="button3">
+            <div class="button3__base_bottom"></div>
+            <div class="button3__base_top"></div>
+            <div class="button3__base_screen">
+                <p class="button__text_top button_text">GRINDPRIDE</p>
+                <p class="button__text_bottom yellow button_text">PRODUCTION</p>
+            </div>
+        </div>
+        <div class="button4">
+            <div class="button4_base">
+                <div class="button4__base_bottom"></div>
+                <div class="button4__base_top"></div>
+            </div>
+            <div class="button4__presspart">
+                <div class="button4__presspart_top">
+                    <p class="button4__text button_text">
+                        TEXT
+                        <br> TEXT
+                    </p>
+                </div>
+                <div class="button4__presspart_front"></div>
+                <div class="button4__presspart_leftside"></div>
+            </div>
+        </div>
+        <div class="button5">
+            <div class="button5_base">
+                <div class="button5__base_bottom"></div>
+                <div class="button5__base_top"></div>
+            </div>
+            <div class="button5__presspart">
+                <div class="button5__presspart_top">
+                    <p class="button5__text button_text">
+                        ЖМИ
+                    </p>
+                </div>
+                <div class="button5__presspart_front"></div>
+            </div>
+        </div>
+    </div>
+    <svg width="0" height="0">
+        <defs>
+            <clipPath id="clip-shape" clipPathUnits="objectBoundingBox">
+                <polygon points="0.93 0, 1.00 .12, .88 .83, .72 1.00, .06 1.00, 0 .86, .27 .06, .37 0">
+                </polygon>
+            </clipPath>
+        </defs>
+    </svg>
+    <div class="video__wrapper"><iframe width="560" height="315" src="https://www.youtube.com/embed/J0Z8r3_29xo" frameborder="0" allowfullscreen></iframe></div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/3DButton.js"></script>
+</body>
+
+</html>
