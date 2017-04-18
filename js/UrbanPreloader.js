@@ -14,6 +14,7 @@ function done() {
     setTimeout(function() {
         $('.preloader').fadeOut(1100);
         $('.layout__machine').fadeIn(1100);
+        $('.rights').fadeIn(1100);
     }, 1000);
 };
 
