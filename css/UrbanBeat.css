@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+    /*cursor: none;*/
+}
+
+html {
+    overflow-y: hidden;
+}
+
+body {
+    -ms-interpolation-mode: nearest-neighbor;
+    /* IE 7+  (не стандартное свойство) */
+    image-rendering: -webkit-optimize-contrast;
+    /* Safari 6, UC Browser 9.9 */
+    image-rendering: -webkit-crisp-edges;
+    /* Safari 7+ */
+    image-rendering: -moz-crisp-edges;
+    /* Firefox 3.6+ */
+    image-rendering: -o-crisp-edges;
+    /* Opera 12 */
+    image-rendering: pixelated;
+    /* Chrome 41+ and Opera 26+ */
+}
+
+.preloaded {
+    display: none;
+}
+.fon_wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.fonImage {
+    /*display: none;*/
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader {
+    top: 50%;
+    z-index: 10;
+}
+
+.fon {
+    top: 50%;
+}
+
+.horizont {
+    display: none;
+    top: 198px;
+}
+
+.greed {
+    display: none;
+    top: 0;
+}
+
+.sity {
+    display: none;
+    top: -120px;
+}
+
+.noize {
+    display: none;
+    animation: 1s noizeMove infinite;
+    /*animation-timing-function: step-end;*/
+    animation-timing-function: steps(22, end);
+    top: -154px;
+
+}
+
+.layout__machine {
+    position: absolute;
+    background: url(../images/UrbanBeat/machine.png) center no-repeat;
+    background-size: cover;
+    width: 750px;
+    height: 510px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    display: none;
+}
+
+.dynamic {
+    position: absolute;
+    background: url(../images/UrbanBeat/dynamic.png) center no-repeat;
+    width: 200px;
+    height: 200px;
+    top: 274px;
+    left: 529px;
+}
+
+#red {
+    position: absolute;
+    left: 612px;
+    top: 164px;
+    margin: 10px;
+    display: inline-block;
+    height: 99px;
+}
+
+#red .noUi-connect {
+    background: #c0392b;
+}
+
+.noUi-handle {
+    background: url(../images/UrbanBeat/ranger.png) center no-repeat;
+    border: none;
+    border-radius: 0;
+    cursor: grab;
+    cursor: -webkit-grab;
+    box-shadow: none;
+}
+
+.noUi-target {
+    background: none;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.button_panel {
+    align-content: flex-start;
+    position: absolute;
+    top: 43px;
+    left: 73px;
+    display: flex;
+    width: 540px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+.layout__button {
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    background-size: cover;
+    width: 111px;
+    height: 93px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.layout__button.pressed {
+    transform: translateY(3px);
+    /*background: url(../images/UrbanBeat/press-button.png) no-repeat;*/
+}
+
+
+/*BASS*/
+
+.layout__button.button1 {
+    background: url(../images/UrbanBeat/buttons/BASS_01_OFF.png) center no-repeat;
+}
+
+.layout__button.button1.pressed {
+    background: url(../images/UrbanBeat/buttons/BASS_01_ON.png) center no-repeat;
+}
+
+.layout__button.button2 {
+    background: url(../images/UrbanBeat/buttons/BASS_02_OFF.png) center no-repeat;
+}
+
+.layout__button.button2.pressed {
+    background: url(../images/UrbanBeat/buttons/BASS_02_ON.png) center no-repeat;
+}
+
+.layout__button.button3 {
+    background: url(../images/UrbanBeat/buttons/BASS_03_OFF.png) center no-repeat;
+}
+
+.layout__button.button3.pressed {
+    background: url(../images/UrbanBeat/buttons/BASS_03_ON.png) center no-repeat;
+}
+
+.layout__button.button4 {
+    background: url(../images/UrbanBeat/buttons/BASS_04_OFF.png) center no-repeat;
+}
+
+.layout__button.button4.pressed {
+    background: url(../images/UrbanBeat/buttons/BASS_04_ON.png) center no-repeat;
+}
+
+
+/*BEEP*/
+
+.layout__button.button5 {
+    background: url(../images/UrbanBeat/buttons/BEEP_C_OFF.png) center no-repeat;
+}
+
+.layout__button.button5.pressed {
+    background: url(../images/UrbanBeat/buttons/BEEP_C_ON.png) center no-repeat;
+}
+
+.layout__button.button6 {
+    background: url(../images/UrbanBeat/buttons/BEEP_E_OFF.png) center no-repeat;
+}
+
+.layout__button.button6.pressed {
+    background: url(../images/UrbanBeat/buttons/BEEP_E_ON.png) center no-repeat;
+}
+
+.layout__button.button7 {
+    background: url(../images/UrbanBeat/buttons/BEEP_G_OFF.png) center no-repeat;
+}
+
+.layout__button.button7.pressed {
+    background: url(../images/UrbanBeat/buttons/BEEP_G_ON.png) center no-repeat;
+}
+
+.layout__button.button8 {
+    background: url(../images/UrbanBeat/buttons/BEEP_B_OFF.png) center no-repeat;
+}
+
+.layout__button.button8.pressed {
+    background: url(../images/UrbanBeat/buttons/BEEP_B_ON.png) center no-repeat;
+}
+
+
+/*OTHER*/
+
+.layout__button.button9 {
+    background: url(../images/UrbanBeat/buttons/KICK_OFF.png) center no-repeat;
+}
+
+.layout__button.button9.pressed {
+    background: url(../images/UrbanBeat/buttons/KICK_ON.png) center no-repeat;
+}
+
+.layout__button.button10 {
+    background: url(../images/UrbanBeat/buttons/SNARE_OFF.png) center no-repeat;
+}
+
+.layout__button.button10.pressed {
+    background: url(../images/UrbanBeat/buttons/SNARE_ON.png) center no-repeat;
+}
+
+.layout__button.button11 {
+    background: url(../images/UrbanBeat/buttons/HIHAT_OFF.png) center no-repeat;
+}
+
+.layout__button.button11.pressed {
+    background: url(../images/UrbanBeat/buttons/HIHAT_ON.png) center no-repeat;
+}
+
+.layout__button.button12 {
+    background: url(../images/UrbanBeat/buttons/EFFECT_OFF.png) center no-repeat;
+}
+
+.layout__button.button12.pressed {
+    background: url(../images/UrbanBeat/buttons/EFFECT_ON.png) center no-repeat;
+}
+
+
+/*RIGHTS*/
+
+.rights {
+    display: none;
+
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,410%);
+}
+.rights a {
+display: inline-block;
+}
+.rights a div {
+    height: 60px;
+    width: 320px;
+}
+
+.rights_S {
+    background: url(../images/UrbanBeat/rightsS.png) center no-repeat;
+}
+
+.rights_G {
+    background: url(../images/UrbanBeat/rightsG.png) center no-repeat;
+}
+
+.rights_D {
+    background: url(../images/UrbanBeat/rightsD.png) center no-repeat;
+}
+
+
+/*DYNAMIC*/
+
+.dynamic {
+    position: relative;
+    background: url(../images/UrbanBeat/dynamic.png) center no-repeat;
+    width: 90px;
+    height: 90px;
+    top: 332px;
+    left: 584px;
+}
+
+.dynamic.active {
+    -webkit-animation: 0.1s tremor ease-out infinite;
+    animation: 0.1s tremor ease-out infinite;
+}
+
+@-webkit-keyframes tremor {
+    0%,
+    25% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+
+@-moz-keyframes tremor {
+    0%,
+    25% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+
+@-ms-keyframes tremor {
+    0%,
+    25% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%,
+    100% {
+        left: 1px;
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+
+@-o-keyframes tremor {
+    0%,
+    25% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+
+@keyframes tremor {
+    0%,
+    25% {
+        -webkit-transform: translateX(-2%);
+        transform: translateX(-2%);
+    }
+    50%,
+    100% {
+        -webkit-transform: translateX(2%);
+        transform: translateX(2%);
+    }
+}
+@keyframes noizeMove {
+    100%{
+        top:-160px;
+    }
+}
