@@ -33,7 +33,7 @@ $(document).ready(function() {
             el[0].addEventListener('timeupdate', function() {
                 var buffer = .17;
                 if (this.currentTime > this.duration - buffer) {
-                    this.pause();
+                    // this.pause();
                     this.currentTime = .01;
                     this.play();
                 }
@@ -59,7 +59,7 @@ $(document).ready(function() {
     };
 
 
-    butt.bind("mousedown touchstart", function(event) {
+    butt.bind("mousedown touchstart tap", function(event) {
         event.stopPropagation();
         event.preventDefault();
         sw = $(this);
@@ -71,7 +71,7 @@ $(document).ready(function() {
         playBeat(swag);
     });
 
-    $(document).bind("mouseup touchend", function() {
+    $(document).bind("mouseup touchend ", function() {
         if (swag != undefined) {
             sw.removeClass('pressed');
             stopBeat(swag, sw);
