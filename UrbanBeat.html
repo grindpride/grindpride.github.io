@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale = 0.5,user-scalable=no">
     <title>UrbanBeat</title>
+    <link rel="icon" type="image/gif" href="./images/UrbanBeat/favicon.gif" />
     <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/UrbanBeat.css">
@@ -18,8 +19,7 @@
         <img src="./images/UrbanBeat/greed.png" alt="" class="fonImage greed">
         <img src="./images/UrbanBeat/sity.png" alt="" class="fonImage sity">
         <img src="./images/UrbanBeat/horizont.png" alt="" class="horizont fonImage">
-        <img src="./images/UrbanBeat/noize
-.png" class="noize fonImage" alt="">
+        <img src="./images/UrbanBeat/noize.png" class="noize fonImage" alt="">
     </div>
     <!-- PRELOAD IMAGES -->
     <img src="./images/UrbanBeat/buttons/BASS_01_OFF.png" alt="" class="preloaded">
@@ -51,78 +51,18 @@
         <div class="sliders" id="red"></div>
         <div class="dynamic"></div>
         <div class="button_panel">
-            <div class="layout__button bass button1">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/1-1bass01.mp3"></source>
-                    <source src="sounds/UrbanBeat/1-1bass01.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button bass button2">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/1-2bass02.mp3"></source>
-                    <source src="sounds/UrbanBeat/1-2bass02.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button bass button3">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/1-3bass03.mp3"></source>
-                    <source src="sounds/UrbanBeat/1-3bass03.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button bass button4">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/1-4bass04.mp3"></source>
-                    <source src="sounds/UrbanBeat/1-4bass04.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button5">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/2-1beep-C.mp3"></source>
-                    <source src="sounds/UrbanBeat/2-1beep-C.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button6">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/2-2beep-E.mp3"></source>
-                    <source src="sounds/UrbanBeat/2-2beep-E.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button7">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/2-3beep-G.mp3"></source>
-                    <source src="sounds/UrbanBeat/2-3beep-G.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button8">
-                <audio class="audio loop" loop="loop" preload="auto">
-                    <source src="sounds/UrbanBeat/2-4beep-B.mp3"></source>
-                    <source src="sounds/UrbanBeat/2-4beep-B.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button9">
-                <audio class="audio" preload="auto">
-                    <source src="sounds/UrbanBeat/3-1bochka02.mp3"></source>
-                    <source src="sounds/UrbanBeat/3-1bochka02.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button10">
-                <audio class="audio" preload="auto">
-                    <source src="sounds/UrbanBeat/3-2snare01.mp3"></source>
-                    <source src="sounds/UrbanBeat/3-2snare01.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button11">
-                <audio class="audio" preload="auto">
-                    <source src="sounds/UrbanBeat/3-3hihat.mp3"></source>
-                    <source src="sounds/UrbanBeat/3-3hihat.ogg"></source>
-                </audio>
-            </div>
-            <div class="layout__button button12">
-                <audio class="audio" preload="auto">
-                    <source src="sounds/UrbanBeat/3-4effects01.mp3"></source>
-                    <source src="sounds/UrbanBeat/3-4effects01.ogg"></source>
-                </audio>
-            </div>
+            <div class="layout__button bass button1" id="button1"></div>
+            <div class="layout__button bass button2" id="button2"></div>
+            <div class="layout__button bass button3" id="button3"></div>
+            <div class="layout__button bass button4" id="button4"></div>
+            <div class="layout__button button5" id="button5"></div>
+            <div class="layout__button button6" id="button6"></div>
+            <div class="layout__button button7" id="button7"></div>
+            <div class="layout__button button8" id="button8"></div>
+            <div class="layout__button button9" id="button9"></div>
+            <div class="layout__button button10" id="button10"></div>
+            <div class="layout__button button11" id="button11"></div>
+            <div class="layout__button button12" id="button12"></div>
         </div>
     </div>
     <div class="rights">
@@ -138,8 +78,9 @@
     </div>
     <!-- <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!--     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
     <script type="text/javascript" src="js/nouislider.js"></script>
+    <script type="text/javascript" src="js/howler.js"></script>
     <script type="text/javascript" src="js/UrbanPreloader.js"></script>
     <script type="text/javascript" src="js/UrbanBeat.js"></script>
 </body>
