@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Spiral Photo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.11.4/paper-full.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="app-ff644d0282.min.css" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <input type='file' id="imgInp" />
+        <img id="blah" src="#" alt="your image" />
+    </form>
+    <img src="res/grindpride.jpg" class="preload" id="grindpride">
+    <canvas id="myCanvas" width="1000" height="900" resize></canvas>
+    <script type="text/javascript" src="lib/lib.min.js"></script>
+    <script type="text/paperscript" canvas="myCanvas" src="app-d5eb87cb13.min.js"></script>
+</body>
+
+</html>
