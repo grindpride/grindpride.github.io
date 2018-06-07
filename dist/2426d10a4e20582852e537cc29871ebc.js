@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({79:[function(require,module,exports) {
+})({13:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -101,7 +101,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],12:[function(require,module,exports) {
+},{}],8:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,37 +132,37 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":79}],19:[function(require,module,exports) {
+},{"./bundle-url":13}],10:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\player-01.png":57,"./..\\assets\\img\\player-02.png":52,"./..\\assets\\img\\player-03.png":53,"./..\\assets\\img\\player-04.png":54,"./..\\assets\\img\\player-05.png":55,"./..\\assets\\img\\player-06.png":58,"./..\\assets\\img\\player-07.png":59,"./..\\assets\\img\\player-08.png":65,"./..\\assets\\img\\player-09.png":60,"./..\\assets\\img\\player-10.png":61,"./..\\assets\\img\\player-11.png":62,"./..\\assets\\img\\player-12.png":63,"./..\\assets\\img\\no_ava.png":64,"_css_loader":12}],14:[function(require,module,exports) {
+},{"./..\\assets\\img\\player-01.png":17,"./..\\assets\\img\\player-02.png":18,"./..\\assets\\img\\player-03.png":19,"./..\\assets\\img\\player-04.png":20,"./..\\assets\\img\\player-05.png":26,"./..\\assets\\img\\player-06.png":27,"./..\\assets\\img\\player-07.png":22,"./..\\assets\\img\\player-08.png":21,"./..\\assets\\img\\player-09.png":24,"./..\\assets\\img\\player-10.png":23,"./..\\assets\\img\\player-11.png":25,"./..\\assets\\img\\player-12.png":28,"./..\\assets\\img\\no_ava.png":29,"_css_loader":8}],11:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\romb.png":41,"./..\\assets\\img\\fb.png":42,"./..\\assets\\img\\ok.png":43,"./..\\assets\\img\\vk.png":44,"./..\\assets\\img\\tw.png":45,"./..\\assets\\img\\timeline.png":46,"_css_loader":12}],15:[function(require,module,exports) {
+},{"./..\\assets\\img\\romb.png":14,"./..\\assets\\img\\fb.png":32,"./..\\assets\\img\\ok.png":30,"./..\\assets\\img\\vk.png":31,"./..\\assets\\img\\tw.png":15,"./..\\assets\\img\\timeline.png":16,"_css_loader":8}],12:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],16:[function(require,module,exports) {
+},{"_css_loader":8}],9:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":12}],2:[function(require,module,exports) {
+},{"_css_loader":8}],2:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./field.pcss":19,"./aside.pcss":14,"./content.pcss":15,"./normalize.css":16,"_css_loader":12}],87:[function(require,module,exports) {
+},{"./field.pcss":10,"./aside.pcss":11,"./content.pcss":12,"./normalize.css":9,"_css_loader":8}],33:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49602' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56450' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -285,7 +285,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],88:[function(require,module,exports) {
+},{}],35:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -364,7 +364,7 @@ LazyPromise.prototype.then = function (onSuccess, onError) {
 LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
-},{"./bundle-url":79}],0:[function(require,module,exports) {
-var b=require(88);b.load([["a74391ee941c675d47547fbc127c9953.png",57],["012129dfa8b9697761b3dd8be4c0d093.png",52],["26912646c726da07792372becae14488.png",53],["2109065c09b3c9e14828a01a55364146.png",54],["c5a4e2268e29659f3b62f9043881e3ba.png",55],["0fdb78fb9d861d03c3902604792ea911.png",58],["78452f0975ceaaab6893b3a2b86410a7.png",59],["0da5f15327975923990c3320b11f3da1.png",65],["70869026b8cd2047eca4ccb0a26e0524.png",60],["d33b1283ff53d7f993eb42af961971a2.png",61],["5c8ba66099f30cbaf14f0c4261b76f34.png",62],["783cc6ac086352342f5e976d1806d875.png",63],["391fcc4e11c1152a53d83685fbc7a29f.png",64],["7d8a70c9b1c2b930f6130a66592ecdf5.png",41],["1a7789e0e813e090ae43a78ca6b61514.png",42],["cf0a1f20846c1403b51c66916949df74.png",43],["f61c27faf528adfb452591520091b347.png",44],["f23c45368fcc479ad90d335b825d3062.png",45],["ebefd5f729546a61cdd94808b1d84662.png",46]]);
-},{}]},{},[87,0])
+},{"./bundle-url":13}],0:[function(require,module,exports) {
+var b=require(35);b.load([["a74391ee941c675d47547fbc127c9953.png",17],["012129dfa8b9697761b3dd8be4c0d093.png",18],["26912646c726da07792372becae14488.png",19],["2109065c09b3c9e14828a01a55364146.png",20],["c5a4e2268e29659f3b62f9043881e3ba.png",26],["0fdb78fb9d861d03c3902604792ea911.png",27],["78452f0975ceaaab6893b3a2b86410a7.png",22],["0da5f15327975923990c3320b11f3da1.png",21],["70869026b8cd2047eca4ccb0a26e0524.png",24],["d33b1283ff53d7f993eb42af961971a2.png",23],["5c8ba66099f30cbaf14f0c4261b76f34.png",25],["783cc6ac086352342f5e976d1806d875.png",28],["391fcc4e11c1152a53d83685fbc7a29f.png",29],["7d8a70c9b1c2b930f6130a66592ecdf5.png",14],["1a7789e0e813e090ae43a78ca6b61514.png",32],["cf0a1f20846c1403b51c66916949df74.png",30],["f61c27faf528adfb452591520091b347.png",31],["f23c45368fcc479ad90d335b825d3062.png",15],["ebefd5f729546a61cdd94808b1d84662.png",16]]);
+},{}]},{},[33,0])
 //# sourceMappingURL=/dist/2426d10a4e20582852e537cc29871ebc.map
