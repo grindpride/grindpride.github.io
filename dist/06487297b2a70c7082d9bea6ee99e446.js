@@ -33,7 +33,7 @@ require = function (r, e, n) {
     return t
 }({
     32: [function (require, module, exports) {
-        console.log("wtf");
+        console.log("wtf1");
         var e = void 0;
         "localhost:1234" === window.location.host && (e = !0);
         var t = document.createElement("script");
