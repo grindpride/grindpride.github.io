@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({177:[function(require,module,exports) {
+})({59:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -101,7 +101,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],157:[function(require,module,exports) {
+},{}],53:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,37 +132,37 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":177}],158:[function(require,module,exports) {
+},{"./bundle-url":59}],54:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\player-01.png":162,"./..\\assets\\img\\player-02.png":163,"./..\\assets\\img\\player-03.png":164,"./..\\assets\\img\\player-04.png":165,"./..\\assets\\img\\player-05.png":166,"./..\\assets\\img\\player-06.png":167,"./..\\assets\\img\\player-07.png":171,"./..\\assets\\img\\player-08.png":174,"./..\\assets\\img\\player-09.png":168,"./..\\assets\\img\\player-10.png":169,"./..\\assets\\img\\player-11.png":170,"./..\\assets\\img\\player-12.png":172,"./..\\assets\\img\\no_ava.png":173,"_css_loader":157}],159:[function(require,module,exports) {
+},{"./..\\assets\\img\\player-01.png":60,"./..\\assets\\img\\player-02.png":61,"./..\\assets\\img\\player-03.png":62,"./..\\assets\\img\\player-04.png":63,"./..\\assets\\img\\player-05.png":64,"./..\\assets\\img\\player-06.png":65,"./..\\assets\\img\\player-07.png":66,"./..\\assets\\img\\player-08.png":67,"./..\\assets\\img\\player-09.png":68,"./..\\assets\\img\\player-10.png":69,"./..\\assets\\img\\player-11.png":70,"./..\\assets\\img\\player-12.png":71,"_css_loader":53}],55:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\romb.png":176,"./..\\assets\\img\\timeline.png":175,"_css_loader":157}],160:[function(require,module,exports) {
+},{"./..\\assets\\img\\romb.png":72,"./..\\assets\\img\\timeline.png":73,"_css_loader":53}],56:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":157}],161:[function(require,module,exports) {
+},{"_css_loader":53}],57:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":157}],75:[function(require,module,exports) {
+},{"_css_loader":53}],2:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./field.pcss":158,"./aside.pcss":159,"./content.pcss":160,"./normalize.css":161,"_css_loader":157}],183:[function(require,module,exports) {
+},{"./field.pcss":54,"./aside.pcss":55,"./content.pcss":56,"./normalize.css":57,"_css_loader":53}],74:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '54795' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49758' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -285,7 +285,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],187:[function(require,module,exports) {
+},{}],76:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -364,7 +364,7 @@ LazyPromise.prototype.then = function (onSuccess, onError) {
 LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
-},{"./bundle-url":177}],0:[function(require,module,exports) {
-var b=require(187);b.load([["a74391ee941c675d47547fbc127c9953.png",162],["012129dfa8b9697761b3dd8be4c0d093.png",163],["26912646c726da07792372becae14488.png",164],["2109065c09b3c9e14828a01a55364146.png",165],["c5a4e2268e29659f3b62f9043881e3ba.png",166],["0fdb78fb9d861d03c3902604792ea911.png",167],["78452f0975ceaaab6893b3a2b86410a7.png",171],["0da5f15327975923990c3320b11f3da1.png",174],["70869026b8cd2047eca4ccb0a26e0524.png",168],["d33b1283ff53d7f993eb42af961971a2.png",169],["5c8ba66099f30cbaf14f0c4261b76f34.png",170],["783cc6ac086352342f5e976d1806d875.png",172],["391fcc4e11c1152a53d83685fbc7a29f.png",173],["7d8a70c9b1c2b930f6130a66592ecdf5.png",176],["ebefd5f729546a61cdd94808b1d84662.png",175]]);
-},{}]},{},[183,0])
+},{"./bundle-url":59}],0:[function(require,module,exports) {
+var b=require(76);b.load([["a74391ee941c675d47547fbc127c9953.png",60],["012129dfa8b9697761b3dd8be4c0d093.png",61],["26912646c726da07792372becae14488.png",62],["2109065c09b3c9e14828a01a55364146.png",63],["c5a4e2268e29659f3b62f9043881e3ba.png",64],["0fdb78fb9d861d03c3902604792ea911.png",65],["78452f0975ceaaab6893b3a2b86410a7.png",66],["0da5f15327975923990c3320b11f3da1.png",67],["70869026b8cd2047eca4ccb0a26e0524.png",68],["d33b1283ff53d7f993eb42af961971a2.png",69],["5c8ba66099f30cbaf14f0c4261b76f34.png",70],["783cc6ac086352342f5e976d1806d875.png",71],["7d8a70c9b1c2b930f6130a66592ecdf5.png",72],["ebefd5f729546a61cdd94808b1d84662.png",73]]);
+},{}]},{},[74,0])
 //# sourceMappingURL=/dist/2426d10a4e20582852e537cc29871ebc.map
