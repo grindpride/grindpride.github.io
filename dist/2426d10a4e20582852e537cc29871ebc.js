@@ -71,7 +71,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({238:[function(require,module,exports) {
+})({110:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -101,7 +101,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],186:[function(require,module,exports) {
+},{}],104:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,37 +132,37 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":238}],191:[function(require,module,exports) {
+},{"./bundle-url":110}],106:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\player-01.png":212,"./..\\assets\\img\\player-02.png":213,"./..\\assets\\img\\player-03.png":214,"./..\\assets\\img\\player-04.png":215,"./..\\assets\\img\\player-05.png":236,"./..\\assets\\img\\player-06.png":216,"./..\\assets\\img\\player-07.png":217,"./..\\assets\\img\\player-08.png":218,"./..\\assets\\img\\player-09.png":219,"./..\\assets\\img\\player-10.png":220,"./..\\assets\\img\\player-11.png":222,"./..\\assets\\img\\player-12.png":221,"./..\\assets\\img\\sport.png":252,"./..\\assets\\img\\aim.png":254,"./..\\assets\\img\\fly.png":253,"_css_loader":186}],188:[function(require,module,exports) {
+},{"./..\\assets\\img\\player-01.png":113,"./..\\assets\\img\\player-02.png":115,"./..\\assets\\img\\player-03.png":114,"./..\\assets\\img\\player-04.png":125,"./..\\assets\\img\\player-05.png":127,"./..\\assets\\img\\player-06.png":117,"./..\\assets\\img\\player-07.png":116,"./..\\assets\\img\\player-08.png":124,"./..\\assets\\img\\player-09.png":123,"./..\\assets\\img\\player-10.png":120,"./..\\assets\\img\\player-11.png":122,"./..\\assets\\img\\player-12.png":119,"./..\\assets\\img\\ava\\arhan14.png":145,"./..\\assets\\img\\ava\\geek14.png":153,"./..\\assets\\img\\ava\\gvozd14.png":154,"./..\\assets\\img\\ava\\kadril14.png":155,"./..\\assets\\img\\ava\\krivonos14.png":156,"./..\\assets\\img\\ava\\ryabo14.png":157,"./..\\assets\\img\\ava\\steb14.png":158,"./..\\assets\\img\\ava\\strep14.png":159,"./..\\assets\\img\\sport.png":118,"./..\\assets\\img\\aim.png":126,"./..\\assets\\img\\fly.png":121,"./..\\assets\\img\\friend.png":130,"_css_loader":104}],105:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\romb.png":210,"./..\\assets\\img\\timeline.png":211,"_css_loader":186}],189:[function(require,module,exports) {
+},{"./..\\assets\\img\\romb.png":112,"./..\\assets\\img\\timeline.png":111,"_css_loader":104}],108:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":186}],190:[function(require,module,exports) {
+},{"_css_loader":104}],107:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":186}],81:[function(require,module,exports) {
+},{"_css_loader":104}],2:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./field.pcss":191,"./aside.pcss":188,"./content.pcss":189,"./normalize.css":190,"_css_loader":186}],299:[function(require,module,exports) {
+},{"./field.pcss":106,"./aside.pcss":105,"./content.pcss":108,"./normalize.css":107,"_css_loader":104}],161:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '59552' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49364' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -285,7 +285,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],300:[function(require,module,exports) {
+},{}],162:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -364,7 +364,7 @@ LazyPromise.prototype.then = function (onSuccess, onError) {
 LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
-},{"./bundle-url":238}],0:[function(require,module,exports) {
-var b=require(300);b.load([["a74391ee941c675d47547fbc127c9953.png",212],["012129dfa8b9697761b3dd8be4c0d093.png",213],["26912646c726da07792372becae14488.png",214],["2109065c09b3c9e14828a01a55364146.png",215],["c5a4e2268e29659f3b62f9043881e3ba.png",236],["0fdb78fb9d861d03c3902604792ea911.png",216],["78452f0975ceaaab6893b3a2b86410a7.png",217],["0da5f15327975923990c3320b11f3da1.png",218],["70869026b8cd2047eca4ccb0a26e0524.png",219],["d33b1283ff53d7f993eb42af961971a2.png",220],["5c8ba66099f30cbaf14f0c4261b76f34.png",222],["783cc6ac086352342f5e976d1806d875.png",221],["2afb49cc4dc79d272196ddf4e6b0cd36.png",252],["8fc7e6f85a4b07cba11430890a5ba67f.png",254],["52f13e67d50accbe04d851a9e5f2862f.png",253],["7d8a70c9b1c2b930f6130a66592ecdf5.png",210],["ebefd5f729546a61cdd94808b1d84662.png",211]]);
-},{}]},{},[299,0])
+},{"./bundle-url":110}],0:[function(require,module,exports) {
+var b=require(162);b.load([["a74391ee941c675d47547fbc127c9953.png",113],["012129dfa8b9697761b3dd8be4c0d093.png",115],["26912646c726da07792372becae14488.png",114],["2109065c09b3c9e14828a01a55364146.png",125],["c5a4e2268e29659f3b62f9043881e3ba.png",127],["0fdb78fb9d861d03c3902604792ea911.png",117],["78452f0975ceaaab6893b3a2b86410a7.png",116],["0da5f15327975923990c3320b11f3da1.png",124],["70869026b8cd2047eca4ccb0a26e0524.png",123],["d33b1283ff53d7f993eb42af961971a2.png",120],["5c8ba66099f30cbaf14f0c4261b76f34.png",122],["783cc6ac086352342f5e976d1806d875.png",119],["73370bf648397b94e3cab14f95d9f941.png",145],["7055838e83b9df068c196f198110f02e.png",153],["f0d511bf12011d9b4dab0f44d6d5e30d.png",154],["c8918be054856bcc5f3c3c9401ea420d.png",155],["8bb9c6b646a21949970cb3ad9df4ce6a.png",156],["313158ec61e2fa80294a4bab5e3840e2.png",157],["d7204d279a780aaf32f80b21905524bb.png",158],["c57fc2949180e8218569573eaeb66400.png",159],["2afb49cc4dc79d272196ddf4e6b0cd36.png",118],["8fc7e6f85a4b07cba11430890a5ba67f.png",126],["52f13e67d50accbe04d851a9e5f2862f.png",121],["d4446dadf14d11f2aa1a4fbc8280d294.png",130],["7d8a70c9b1c2b930f6130a66592ecdf5.png",112],["ebefd5f729546a61cdd94808b1d84662.png",111]]);
+},{}]},{},[161,0])
 //# sourceMappingURL=/dist/2426d10a4e20582852e537cc29871ebc.map
