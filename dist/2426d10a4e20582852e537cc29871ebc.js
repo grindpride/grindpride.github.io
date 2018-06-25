@@ -132,13 +132,13 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":418}],390:[function(require,module,exports) {
+},{"./bundle-url":418}],389:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./..\\assets\\img\\player-01.png":417,"./..\\assets\\img\\player-02.png":394,"./..\\assets\\img\\player-03.png":395,"./..\\assets\\img\\player-04.png":412,"./..\\assets\\img\\player-05.png":413,"./..\\assets\\img\\player-06.png":397,"./..\\assets\\img\\player-07.png":396,"./..\\assets\\img\\player-08.png":398,"./..\\assets\\img\\player-09.png":400,"./..\\assets\\img\\player-10.png":406,"./..\\assets\\img\\player-11.png":399,"./..\\assets\\img\\player-12.png":401,"./..\\assets\\img\\ava\\arhan14.png":408,"./..\\assets\\img\\ava\\geek14.png":411,"./..\\assets\\img\\ava\\gvozd14.png":407,"./..\\assets\\img\\ava\\kadril14.png":415,"./..\\assets\\img\\ava\\krivonos14.png":416,"./..\\assets\\img\\ava\\ryabo14.png":409,"./..\\assets\\img\\ava\\steb14.png":410,"./..\\assets\\img\\ava\\strep14.png":414,"./..\\assets\\img\\sport.png":402,"./..\\assets\\img\\aim.png":403,"./..\\assets\\img\\fly.png":405,"./..\\assets\\img\\friend.png":404,"_css_loader":388}],389:[function(require,module,exports) {
+},{"./..\\assets\\img\\player-01.png":394,"./..\\assets\\img\\player-02.png":395,"./..\\assets\\img\\player-03.png":397,"./..\\assets\\img\\player-04.png":396,"./..\\assets\\img\\player-05.png":398,"./..\\assets\\img\\player-06.png":399,"./..\\assets\\img\\player-07.png":400,"./..\\assets\\img\\player-08.png":401,"./..\\assets\\img\\player-09.png":402,"./..\\assets\\img\\player-10.png":403,"./..\\assets\\img\\player-11.png":404,"./..\\assets\\img\\player-12.png":405,"./..\\assets\\img\\ava\\arhan14.png":415,"./..\\assets\\img\\ava\\geek14.png":410,"./..\\assets\\img\\ava\\gvozd14.png":409,"./..\\assets\\img\\ava\\kadril14.png":411,"./..\\assets\\img\\ava\\krivonos14.png":416,"./..\\assets\\img\\ava\\ryabo14.png":412,"./..\\assets\\img\\ava\\steb14.png":413,"./..\\assets\\img\\ava\\strep14.png":414,"./..\\assets\\img\\sport.png":417,"./..\\assets\\img\\aim.png":406,"./..\\assets\\img\\fly.png":407,"./..\\assets\\img\\friend.png":408,"_css_loader":388}],390:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
@@ -162,7 +162,7 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"./field.pcss":390,"./aside.pcss":389,"./content.pcss":391,"./normalize.css":392,"_css_loader":388}],419:[function(require,module,exports) {
+},{"./field.pcss":389,"./aside.pcss":390,"./content.pcss":391,"./normalize.css":392,"_css_loader":388}],444:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -184,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '56187' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52272' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -285,7 +285,7 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}],420:[function(require,module,exports) {
+},{}],445:[function(require,module,exports) {
 var getBundleURL = require('./bundle-url').getBundleURL;
 
 function loadBundlesLazy(bundles) {
@@ -365,6 +365,6 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise || (this.promise = new Promise(this.executor).catch(onError));
 };
 },{"./bundle-url":418}],0:[function(require,module,exports) {
-var b=require(420);b.load([["a74391ee941c675d47547fbc127c9953.png",417],["012129dfa8b9697761b3dd8be4c0d093.png",394],["26912646c726da07792372becae14488.png",395],["2109065c09b3c9e14828a01a55364146.png",412],["c5a4e2268e29659f3b62f9043881e3ba.png",413],["0fdb78fb9d861d03c3902604792ea911.png",397],["78452f0975ceaaab6893b3a2b86410a7.png",396],["0da5f15327975923990c3320b11f3da1.png",398],["70869026b8cd2047eca4ccb0a26e0524.png",400],["d33b1283ff53d7f993eb42af961971a2.png",406],["5c8ba66099f30cbaf14f0c4261b76f34.png",399],["783cc6ac086352342f5e976d1806d875.png",401],["73370bf648397b94e3cab14f95d9f941.png",408],["7055838e83b9df068c196f198110f02e.png",411],["f0d511bf12011d9b4dab0f44d6d5e30d.png",407],["c8918be054856bcc5f3c3c9401ea420d.png",415],["8bb9c6b646a21949970cb3ad9df4ce6a.png",416],["313158ec61e2fa80294a4bab5e3840e2.png",409],["d7204d279a780aaf32f80b21905524bb.png",410],["c57fc2949180e8218569573eaeb66400.png",414],["2afb49cc4dc79d272196ddf4e6b0cd36.png",402],["8fc7e6f85a4b07cba11430890a5ba67f.png",403],["52f13e67d50accbe04d851a9e5f2862f.png",405],["d4446dadf14d11f2aa1a4fbc8280d294.png",404],["7d8a70c9b1c2b930f6130a66592ecdf5.png",393]]);
-},{}]},{},[419,0])
+var b=require(445);b.load([["a74391ee941c675d47547fbc127c9953.png",394],["012129dfa8b9697761b3dd8be4c0d093.png",395],["26912646c726da07792372becae14488.png",397],["2109065c09b3c9e14828a01a55364146.png",396],["c5a4e2268e29659f3b62f9043881e3ba.png",398],["0fdb78fb9d861d03c3902604792ea911.png",399],["78452f0975ceaaab6893b3a2b86410a7.png",400],["0da5f15327975923990c3320b11f3da1.png",401],["70869026b8cd2047eca4ccb0a26e0524.png",402],["d33b1283ff53d7f993eb42af961971a2.png",403],["5c8ba66099f30cbaf14f0c4261b76f34.png",404],["783cc6ac086352342f5e976d1806d875.png",405],["73370bf648397b94e3cab14f95d9f941.png",415],["7055838e83b9df068c196f198110f02e.png",410],["f0d511bf12011d9b4dab0f44d6d5e30d.png",409],["c8918be054856bcc5f3c3c9401ea420d.png",411],["8bb9c6b646a21949970cb3ad9df4ce6a.png",416],["313158ec61e2fa80294a4bab5e3840e2.png",412],["d7204d279a780aaf32f80b21905524bb.png",413],["c57fc2949180e8218569573eaeb66400.png",414],["2afb49cc4dc79d272196ddf4e6b0cd36.png",417],["8fc7e6f85a4b07cba11430890a5ba67f.png",406],["52f13e67d50accbe04d851a9e5f2862f.png",407],["d4446dadf14d11f2aa1a4fbc8280d294.png",408],["7d8a70c9b1c2b930f6130a66592ecdf5.png",393]]);
+},{}]},{},[444,0])
 //# sourceMappingURL=/dist/2426d10a4e20582852e537cc29871ebc.map
